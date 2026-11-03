@@ -17,6 +17,23 @@
                 <li><a href="genres.html">Genres</a></li>
             </ol>
         </nav>
+        <dialog id="add-dialog">
+            <h1>Add track</h1>
+            <form id="track-form" method="dialog">
+                <label for="title">Track title:</label>
+                <input id="title" name="title" type="text" required>
+
+                <label for="album-ID">Album ID:</label>
+                <input id="album-ID" name="album-ID" type="number" required>
+
+                <label for="duration">Duration (in seconds):</label>
+                <input id="duration" name="duration" type="number">
+
+                <div class="actions">
+                    <button value="cancel" formnovalidate>Cancel</button>
+                    <button value="save">Save</button>
+                </div>
+            </form>
         <div id="content"></div>
         <script src="tracks.js" type="module"></script>
     </body>
