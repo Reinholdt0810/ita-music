@@ -20,4 +20,3 @@ export async function connect() {
 export function pool() {
     return new pg.Pool(env);
 }
-// HEY - tester GitHub
